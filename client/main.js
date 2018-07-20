@@ -75,20 +75,12 @@ function scanLayers(state){
   }
 }
 
-
-
-// document.addEventListener("DOMContentLoaded", function(){
-// 	var svgEmbed = document.querySelector("#svgembed");
-// 	svgEmbed.addEventListener("load", svgloaded);
-// },false);
-
-// var ajax = new XMLHttpRequest();
-// ajax.open("GET", "FullPad.svg", true);
-// ajax.send();
-// ajax.onload = function(e) {
-//   var pad = document.getElementById('placeHolder');
-//   pad.innerHTML = ajax.responseText;
-// }
-
-
-// window.__adobe_cep__.resizeContent(60,200)
+// https://stackoverflow.com/a/14070928
+xhr = new XMLHttpRequest();
+xhr.open("GET","../fonts/SmartAlign2/alignSE.svg",false);
+// Following line is just to be on the safe side;
+// not needed if your server delivers SVG with correct MIME type
+xhr.overrideMimeType("image/svg+xml");
+xhr.send("");
+document.getElementById("placeHolder")
+  .appendChild(xhr.responseXML.documentElement);

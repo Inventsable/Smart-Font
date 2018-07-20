@@ -13,6 +13,11 @@
   width: 2rem;
 }
 
+#placeHolder svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .adobe-input-2x {
   width: 50%;
 }
