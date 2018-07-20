@@ -17,6 +17,7 @@ csInterface.evalScript(`getFilePath('${fontPath}')`)
 
 const layer = {};
 recordLayers();
+scanLayers(true);
 
 function setLayers(params){
   console.log(params);
@@ -33,10 +34,10 @@ btnExport.addEventListener('click', function(e){
 }, false)
 
 
-var btnLayers = document.getElementById('layers');
-btnLayers.addEventListener('click', function(e){
-  recordLayers();
-}, false)
+// var btnLayers = document.getElementById('layers');
+// btnLayers.addEventListener('click', function(e){
+//   recordLayers();
+// }, false)
 
 
 function recordLayers(){
@@ -55,5 +56,39 @@ function recordLayers(){
     console.log(layer);
   });
 }
+
+
+function scanLayers(state){
+  var timer, scanRes;
+  if (state){
+    timer = setInterval(function(){csInterface.evalScript('layerNames();', function(a){
+      if (a == scanRes) return;
+      if (a !== scanRes) {
+        recordLayers();
+      }
+      scanRes = a;
+    })}, 50);
+    console.log("scanning layers on");
+  } else {
+    clearInterval(timer);
+    console.log("scanning layers off");
+  }
+}
+
+
+
+// document.addEventListener("DOMContentLoaded", function(){
+// 	var svgEmbed = document.querySelector("#svgembed");
+// 	svgEmbed.addEventListener("load", svgloaded);
+// },false);
+
+// var ajax = new XMLHttpRequest();
+// ajax.open("GET", "FullPad.svg", true);
+// ajax.send();
+// ajax.onload = function(e) {
+//   var pad = document.getElementById('placeHolder');
+//   pad.innerHTML = ajax.responseText;
+// }
+
 
 // window.__adobe_cep__.resizeContent(60,200)
