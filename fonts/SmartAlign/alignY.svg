@@ -1,0 +1,14 @@
+<svg id="alignY" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.54 15.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a1a0a0;
+      }
+    </style>
+  </defs>
+  <title>alignY</title>
+  <g>
+    <path class="cls-1" d="M15,22.62a.5.5,0,0,1-.5-.5V7.88a.5.5,0,1,1,1,0V22.12A.5.5,0,0,1,15,22.62Z" transform="translate(-11.73 -7.38)"/>
+    <rect class="cls-1" y="4.35" width="6.54" height="6.54" rx="0.75" ry="0.75"/>
+  </g>
+</svg>

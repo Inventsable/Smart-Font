@@ -1,0 +1,14 @@
+<svg id="alignW" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.62 24.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a1a0a0;
+      }
+    </style>
+  </defs>
+  <title>alignW</title>
+  <g>
+    <path class="cls-1" d="M9.69,15l10.18,5.88a.63.63,0,0,0,.94-.55V9.67a.63.63,0,0,0-.94-.55Z" transform="translate(-9.19 -2.73)"/>
+    <path class="cls-1" d="M9.69,27.27a.5.5,0,0,1-.5-.5V3.23a.5.5,0,0,1,1,0V26.77A.5.5,0,0,1,9.69,27.27Z" transform="translate(-9.19 -2.73)"/>
+  </g>
+</svg>

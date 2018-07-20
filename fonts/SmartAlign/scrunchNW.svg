@@ -1,0 +1,16 @@
+<svg id="scrunchNW" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.91 17.92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a1a0a0;
+      }
+    </style>
+  </defs>
+  <title>scrunchNW</title>
+  <g>
+    <path class="cls-1" d="M7,16.12H6V11.33C6,6,6,6,6.54,6h9.69a.5.5,0,0,1,0,1H7Z" transform="translate(-6.04 -6.04)"/>
+    <rect class="cls-1" x="2.3" y="2.3" width="4.63" height="4.63" rx="0.53" ry="0.53"/>
+    <rect class="cls-1" x="7.79" y="7.8" width="4.63" height="4.63" rx="0.53" ry="0.53"/>
+    <rect class="cls-1" x="13.28" y="13.29" width="4.63" height="4.63" rx="0.53" ry="0.53"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg id="scrunchSE" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.91 17.92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a1a0a0;
+      }
+    </style>
+  </defs>
+  <title>scrunchSE</title>
+  <g>
+    <path class="cls-1" d="M23.46,24H13.77a.5.5,0,0,1,0-1H23V13.88a.5.5,0,0,1,.5-.5.5.5,0,0,1,.5.5v9.58A.5.5,0,0,1,23.46,24Z" transform="translate(-6.04 -6.04)"/>
+    <rect class="cls-1" x="10.99" y="10.99" width="4.63" height="4.63" rx="0.53" ry="0.53"/>
+    <rect class="cls-1" x="5.49" y="5.49" width="4.63" height="4.63" rx="0.53" ry="0.53"/>
+    <rect class="cls-1" width="4.63" height="4.63" rx="0.53" ry="0.53"/>
+  </g>
+</svg>
