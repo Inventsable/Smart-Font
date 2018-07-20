@@ -1,0 +1,18 @@
+.adobe-inputGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.prefix {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: .25rem;
+  color: rgba(255,255,255,.2);
+  width: 2rem;
+}
+
+.adobe-input-2x {
+  width: 50%;
+}
