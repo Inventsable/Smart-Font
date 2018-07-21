@@ -1,3 +1,7 @@
+:root {
+  --gridSize: 16px;
+}
+
 .adobe-inputGroup {
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +20,30 @@
 #placeHolder svg {
   width: 2rem;
   height: 2rem;
+}
+
+.adobe-grid {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#gridSet, .adobe-gridBlock {
+  border: var(--borderWidth) solid var(--colorBorder);
+  height: var(--gridSize);
+  width: var(--gridSize);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: calc(var(--gridSize) / 10);
+}
+
+#gridSet svg, .adobe-gridBlock svg {
+  height: var(--gridSize);
+  width: var(--gridSize);
+  margin: calc(var(--gridSize) / 10);
 }
 
 .adobe-input-2x {

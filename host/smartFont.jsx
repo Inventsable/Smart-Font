@@ -64,6 +64,10 @@ function exportByLayer(index, name) {
   exportSVG(index, name);
 }
 
+function unhideLayer(index){
+  doc.layers[index].visible = true;
+}
+
 
 function hideAllExcept(index){
   for (var i = 0; i < doc.layers.length; i++) {
@@ -108,7 +112,7 @@ function countLayers(){
 
 
 // Loic.Aigon
-// @ https://forums.adobe.com/thread/2445663
+// https://forums.adobe.com/thread/2445663
 
 // function saveSvg(doc, filePath, options, artboardIndex, artboardName)
 // {

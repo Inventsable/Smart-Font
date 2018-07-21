@@ -379,32 +379,3 @@ function onAppThemeColorChanged(event) {
     logSkin(skinInfo);
     console.log(`Theme changed to ${appUI.data.theme}`);
 }
-
-
-
-// for (value in appUI.color) {
-//   console.log('--color' + value, appUI.color);
-// }
-
-// $$$ // document.documentElement.style.setProperty('--color' + value, 'red');
-
-// var sheets = [].slice.call(document.styleSheets);
-// sheets.forEach(function(e){
-//   if (e.href.includes('adobeStyle.css')) {
-//     var style = e.cssRules.style;
-//     e.cssRules[1].style.setProperty('--colorPanelBG', 'red');
-//     // console.log(e.cssRules[1].style);
-//     // console.log(e.cssRules.style[0]);
-//
-//     // e.cssRules[1].style.setProperty('--colorPanelBG', '#ff0000')
-//   }
-//
-// })
-
-  // var jsSheet = document.styleSheets[7];
-  // var jsRules = jsSheet.cssRules;
-  // console.log(sheet);
-//   for (var i = 0; i < document.styleSheets.length; i++){
-//
-//   }
-// }
