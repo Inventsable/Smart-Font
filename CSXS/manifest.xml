@@ -29,7 +29,9 @@
           <MainPath>./client/index.html</MainPath>
           <!-- 5) -->
           <!-- <ScriptPath>./host/index.jsx</ScriptPath> -->
-          <CEFCommandLine />
+          <CEFCommandLine>
+            <Parameter>--allow-file-access-from-files</Parameter>
+          </CEFCommandLine>
         </Resources>
         <Lifecycle>
           <AutoVisible>true</AutoVisible>
@@ -45,11 +47,11 @@
               <Width>104</Width>
             </Size>
             <MaxSize>
-              <Height>280</Height>
+              <Height>200</Height>
               <Width>150</Width>
             </MaxSize>
             <MinSize>
-              <Height>280</Height>
+              <Height>200</Height>
               <Width>60</Width>
             </MinSize>
           </Geometry>

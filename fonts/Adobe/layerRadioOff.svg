@@ -1,0 +1,11 @@
+<svg id="layerRadioOff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.5 11.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+      }
+    </style>
+  </defs>
+  <title>layerRadioOff</title>
+  <path class="cls-1" d="M10,15.75A5.75,5.75,0,1,1,15.75,10,5.76,5.76,0,0,1,10,15.75Zm0-10A4.25,4.25,0,1,0,14.25,10,4.26,4.26,0,0,0,10,5.75Z" transform="translate(-4.25 -4.25)"/>
+</svg>

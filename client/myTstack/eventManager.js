@@ -7,6 +7,13 @@
     console.log("Initializing console");
   });
 
+  csInterface.addEventListener('com.smartFont.svgReady', function(evt) {
+    var back = evt.data;
+    var backPack = back.split(';');
+    // sleep(200);
+    // injectSVGImage(backPack[3], backPack[2], backPack[0])
+  });
+
   dispatchEvent("com.plug", "Plugged In")
   function dispatchEvent(name, data) {
   	var event = new CSEvent(name, 'APPLICATION');

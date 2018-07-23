@@ -29,7 +29,13 @@
   flex-wrap: wrap;
 }
 
-#gridSet, .adobe-gridBlock {
+.adobe-gridBlock:hover {
+  background-color: var(--colorHover);
+  width: calc(var(--gridSize) * 1.25);
+  height: calc(var(--gridSize) * 1.25);
+}
+
+#place, #gridSet1, #gridSet2, .adobe-gridBlock {
   border: var(--borderWidth) solid var(--colorBorder);
   height: var(--gridSize);
   width: var(--gridSize);
@@ -38,9 +44,13 @@
   align-items: center;
   flex-wrap: wrap;
   margin: calc(var(--gridSize) / 10);
+  cursor: pointer;
+  transition: background-color 200ms var(--quad) 20ms,
+              width 160ms var(--quad) 20ms,
+              height 160ms var(--quad) 20ms;
 }
 
-#gridSet svg, .adobe-gridBlock svg {
+.adobe-gridBlock img, #place svg, #gridSet1 svg, #gridSet2 svg {
   height: var(--gridSize);
   width: var(--gridSize);
   margin: calc(var(--gridSize) / 10);

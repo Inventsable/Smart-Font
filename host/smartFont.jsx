@@ -59,13 +59,37 @@ function exportSVG(index, name) {
   doc.exportFile(thisFile, type, setOptionsForSVGExport());
 }
 
-function exportByLayer(index, name) {
+app.executeMenuCommand('Hide Bounding Box')
+app.executeMenuCommand('hideEdges')
+
+function exportByLayer(set, count, index, name) {
   hideAllExcept(index);
+  dupeAndHideOriginal();
   exportSVG(index, name);
+  reshowOriginal();
+  var pack = count + ";" + index + ";" + name + ";" + set;
+  JSXEvent(pack, "com.smartFont.svgReady")
 }
 
 function unhideLayer(index){
   doc.layers[index].visible = true;
+}
+
+function dupeAndHideOriginal(){
+  app.executeMenuCommand('selectall');
+  app.executeMenuCommand('copy');
+  app.executeMenuCommand('pasteFront');
+  app.executeMenuCommand('Selection Hat 9');
+  try {
+    app.executeMenuCommand('OffsetPath v22');
+  } catch(e){return}
+  app.executeMenuCommand('Selection Hat 8');
+  app.executeMenuCommand('hide');
+}
+
+function reshowOriginal(){
+  app.executeMenuCommand('undo'); // undo hide
+  app.executeMenuCommand('undo'); // undo pasteFront
 }
 
 
