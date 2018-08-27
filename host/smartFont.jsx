@@ -82,7 +82,7 @@ function dupeAndHideOriginal(){
   app.executeMenuCommand('Selection Hat 9');
   try {
     app.executeMenuCommand('OffsetPath v22');
-  } catch(e){return}
+  } catch(e){dispatchEvent('console', e)}
   app.executeMenuCommand('Selection Hat 8');
   app.executeMenuCommand('hide');
 }

@@ -1,0 +1,16 @@
+<svg id="newLayer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c3c3c3;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>newLayer</title>
+  <path class="cls-1" d="M17.82,2.18V17.82H9.69v-7.5H2.18V2.18ZM8,12v5.29L2.73,12Z"/>
+  <rect class="cls-2" width="20" height="20"/>
+</svg>

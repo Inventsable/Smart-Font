@@ -10,7 +10,7 @@ function init(){
   loadBorderWidth();
   callDoc();
   cs.addEventListener(CSInterface.THEME_COLOR_CHANGED_EVENT, onAppThemeColorChanged);
-  cs.addEventListener('documentAfterActivate', reset);
+  // cs.addEventListener('documentAfterActivate', reset);
   cs.addEventListener('applicationActive', callDoc);
   appUI.data.name = cs.hostEnvironment.appName;
   if (navigator.platform.indexOf('Win') > -1) {
